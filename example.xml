@@ -1,0 +1,14 @@
+<sites>
+	<site rating="5">
+		<title>Dave Eddy</title>
+		<url>http://www.daveeddy.com</url>
+	</site>
+	<site rating="4">
+		<title>Lights and Shapes</title>
+		<url>http://lightsandshapes.com</url>
+	</site>
+	<site rating="3" nsfw="false">
+		<title>Duck Duck Go</title>
+		<url>http://www.duckduckgo.com</url>
+	</site>
+</sites>
