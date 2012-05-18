@@ -19,6 +19,8 @@ You can use this module in your python code by including it and using the
 Command Line
 ------------
 
+You can give an XML file as an argument to XMLParser.py, or it can read in XML from stdin.
+
     dave @ [ bahamas10 :: (SunOS) ] ~/dev/xmlparse $ cat example.xml
     <sites>
     	<site rating="5">
@@ -104,7 +106,7 @@ Command Line
             }
         ]
     }
-    dave @ [ bahamas10 :: (SunOS) ] ~/dev/xmlparse $ ./XMLParser.py example.xml | json -i
+    dave @ [ bahamas10 :: (SunOS) ] ~/dev/xmlparse $ cat example.xml | ./XMLParser.py | json -i
     { sites:
        [ { attr: {},
            child:
