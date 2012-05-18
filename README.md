@@ -6,7 +6,7 @@ XML Parser for Python.  Easily convert awful XML into awesome JSON.
 Usage
 -----
 
-You can use this module in your python code by including it and using the
+Use this module in your python code by including it and using the
 `xmltodict()` function.
 
     >>> import XMLParser
@@ -19,7 +19,7 @@ You can use this module in your python code by including it and using the
 Command Line
 ------------
 
-You can give an XML file as an argument to XMLParser.py, or it can read in XML from stdin.
+Give an XML file as an argument to XMLParser.py, or pass in XML on stdin.
 
     dave @ [ bahamas10 :: (SunOS) ] ~/dev/xmlparse $ cat example.xml
     <sites>
