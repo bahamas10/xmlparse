@@ -97,11 +97,10 @@ if __name__ == '__main__':
 
     try:
         xml_file = sys.argv[1]
+        s = open(xml_file, 'r').read()
     except IndexError:
-        print 'File must be given as an argument.'
-        sys.exit(1)
+        s = sys.stdin.read()
 
-    s = open(xml_file, 'r').read()
     d = xmltodict(s)
 
     print json.dumps(d, indent=4)
