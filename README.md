@@ -9,12 +9,13 @@ Usage
 Use this module in your python code by including it and using the
 `xmltodict()` function.
 
-    >>> import XMLParser
-    >>> xml = open('./example.xml', 'r').read()
-    >>> XMLParser.xmltodict(xml)
-    {u'sites': [{'attr': {}, 'child': {u'site': [{'attr': {u'rating': u'5'}, 'child': {u'url': [{'attr': {}, 'child': u'http://www.daveeddy.com'}], u'title': [{'attr': {}, 'child': u'Dave Eddy'}]}}, {'attr': {u'rating': u'4'}, 'child': {u'url': [{'attr': {}, 'child': u'http://lightsandshapes.com'}], u'title': [{'attr': {}, 'child': u'Lights and Shapes'}]}}, {'attr': {u'rating': u'3', u'nsfw': u'false'}, 'child': {u'url': [{'attr': {}, 'child': u'http://www.duckduckgo.com'}], u'title': [{'attr': {}, 'child': u'Duck Duck Go'}]}}]}}]}
-    >>>
-
+``` python
+>>> import XMLParser
+>>> xml = open('./example.xml', 'r').read()
+>>> XMLParser.xmltodict(xml)
+{u'sites': [{'attr': {}, 'child': {u'site': [{'attr': {u'rating': u'5'}, 'child': {u'url': [{'attr': {}, 'child': u'http://www.daveeddy.com'}], u'title': [{'attr': {}, 'child': u'Dave Eddy'}]}}, {'attr': {u'rating': u'4'}, 'child': {u'url': [{'attr': {}, 'child': u'http://lightsandshapes.com'}], u'title': [{'attr': {}, 'child': u'Lights and Shapes'}]}}, {'attr': {u'rating': u'3', u'nsfw': u'false'}, 'child': {u'url': [{'attr': {}, 'child': u'http://www.duckduckgo.com'}], u'title': [{'attr': {}, 'child': u'Duck Duck Go'}]}}]}}]}
+>>>
+```
 
 Command Line
 ------------
