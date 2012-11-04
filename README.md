@@ -1,7 +1,7 @@
 xmlparse
 ========
 
-XML Parser for Python.  Easily convert awful XML into awesome JSON.
+XML Parser for Python 3.  Easily convert awful XML into awesome JSON.
 
 Usage
 -----
@@ -10,9 +10,9 @@ Use this module in your python code by including it and using the
 `xmltodict()` function.
 
 ``` python
->>> import XMLParser
+>>> import xmlparse
 >>> xml = open('./example.xml', 'r').read()
->>> XMLParser.xmltodict(xml)
+>>> xmlparse.xmltodict(xml)
 {u'sites': [{'attr': {}, 'child': {u'site': [{'attr': {u'rating': u'5'}, 'child': {u'url': [{'attr': {}, 'child': u'http://www.daveeddy.com'}], u'title': [{'attr': {}, 'child': u'Dave Eddy'}]}}, {'attr': {u'rating': u'4'}, 'child': {u'url': [{'attr': {}, 'child': u'http://lightsandshapes.com'}], u'title': [{'attr': {}, 'child': u'Lights and Shapes'}]}}, {'attr': {u'rating': u'3', u'nsfw': u'false'}, 'child': {u'url': [{'attr': {}, 'child': u'http://www.duckduckgo.com'}], u'title': [{'attr': {}, 'child': u'Duck Duck Go'}]}}]}}]}
 >>>
 ```
@@ -20,9 +20,9 @@ Use this module in your python code by including it and using the
 Command Line
 ------------
 
-Give an XML file as an argument to XMLParser.py, or pass in XML on stdin.
+Give an XML file as an argument to xmlparse.py, or pass in XML on stdin.
 
-    dave @ [ bahamas10 :: (SunOS) ] ~/dev/xmlparse $ cat example.xml
+    $ cat example.xml
     <sites>
     	<site rating="5">
     		<title>Dave Eddy</title>
@@ -37,7 +37,7 @@ Give an XML file as an argument to XMLParser.py, or pass in XML on stdin.
     		<url>http://www.duckduckgo.com</url>
     	</site>
     </sites>
-    dave @ [ bahamas10 :: (SunOS) ] ~/dev/xmlparse $ ./XMLParser.py example.xml
+    $ ./xmlparse.py example.xml
     {
         "sites": [
             {
@@ -107,7 +107,7 @@ Give an XML file as an argument to XMLParser.py, or pass in XML on stdin.
             }
         ]
     }
-    dave @ [ bahamas10 :: (SunOS) ] ~/dev/xmlparse $ cat example.xml | ./XMLParser.py | json -i
+    $ cat example.xml | ./xmlparse.py | json -i
     { sites:
        [ { attr: {},
            child:
